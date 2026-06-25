@@ -19,6 +19,13 @@
 
 <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+</script>
 <body>
 
 <!-- ============ NAVIGATION ============ -->
@@ -70,7 +77,7 @@
       <a href="#silhouetten">→ Silhouetten und Reduktion</a>
     </div>
 
-    <!-- ---- Kategorie: Eichhörnchen ---- -->
+    <!-- ---- Kategorie: Teichleben ---- -->
     <div class="cat-block" id="teichleben">
       <h3>Teichleben</h3>
       <p class="cat-desc">Schwimmend, putzend, schlafend - das Leben am kühlen Gewässer nebenan.</p>
@@ -84,47 +91,61 @@
       </div>
     </div>
 
-    <!-- ---- Kategorie: Gartenvögel ---- -->
+    <!-- ---- Kategorie: Gartenleben ---- -->
     <div class="cat-block" id="gartenleben">
       <h3>Gartenleben</h3>
       <p class="cat-desc">Rotkehlchen, Meisen, Gimpel &amp; Co. im Wechsel der Jahreszeiten.</p>
       <div class="grid">
-       <div class="card hero"><img src="bilder/teichleben-01.jpg" alt="Entenküken schaut frontal in die Kamera"><span class="tag"><b>Entenküken</b> · Nahaufnahme</span></div>
-       <div class="card side"><img src="bilder/teichleben-02.jpg" alt="Gänseküken schläft auf der Wiese"><span class="tag"><b>Gänseküken</b> · bei Gänseblümchen</span></div>
-       <div class="card side"><img src="bilder/teichleben-03.jpg" alt="Ente breitet die Flügel auf dem Wasser aus"><span class="tag"><b>Stockente</b> · Flügelzauber</span></div>
+       <div class="card hero"><img src="bilder/gartenleben-01.jpg" alt="Singdrossel singend im Tannengrün"><span class="tag"><b>Singdrossel</b> · grüner Gesang</span></div>
+       <div class="card side"><img src="bilder/gartenleben-02.jpg" alt="Dorngrasmücke singend im Geäst"><span class="tag"><b>Dorngrasmücke</b> · Frühlingsgezwitscher</span></div>
+       <div class="card side"><img src="bilder/gartenleben-03.jpg" alt="Kohlmeise zwischen grünen Zweigen im Baum"><span class="tag"><b>Kohlmeise</b> · frech versteckt</span></div>
       </div>
       <div class="cat-more">
         <a class="btn btn-outline" href="galerie-gartenleben.html">Mehr entdecken</a>
       </div>
     </div>
 
-    <!-- ---- Kategorie: Wasservögel ---- -->
+    <!-- ---- Kategorie: Waldleben ---- -->
     <div class="cat-block" id="waldleben">
       <h3>Waldleben</h3>
       <p class="cat-desc">Eichhörnchen, Specht & Co im grünen Lebensraum.</p>
       <div class="grid">
-       <div class="card hero"><img src="bilder/teichleben-01.jpg" alt="Entenküken schaut frontal in die Kamera"><span class="tag"><b>Entenküken</b> · Nahaufnahme</span></div>
-       <div class="card side"><img src="bilder/teichleben-02.jpg" alt="Gänseküken schläft auf der Wiese"><span class="tag"><b>Gänseküken</b> · bei Gänseblümchen</span></div>
-       <div class="card side"><img src="bilder/teichleben-03.jpg" alt="Ente breitet die Flügel auf dem Wasser aus"><span class="tag"><b>Stockente</b> · Flügelzauber</span></div>
+       <div class="card hero"><img src="bilder/waldleben-01.jpg" alt="Eichhörnchen schaut frontal in die Kamera"><span class="tag"><b>Eichhörnchen</b> · planend</span></div>
+       <div class="card side"><img src="bilder/waldleben-02.jpg" alt="Buntspecht schaut aus einer Baumhöhle"><span class="tag"><b>Buntspecht</b> · aus Baumhöhle</span></div>
+       <div class="card side"><img src="bilder/waldleben-03.jpg" alt="Eichhörnchen, sitzend und schlafend auf Ast"><span class="tag"><b>Eichhörnchen</b> · in sich ruhend</span></div>
       </div>
-      <div class="cat-more">
+      <!--<div class="cat-more">
         <a class="btn btn-outline" href="galerie-waldleben.html">Mehr entdecken</a>
-      </div>
+      </div>-->
     </div>
 
-    <!-- ---- Kategorie: Winterstimmungen ---- -->
-    <div class="cat-block" id="silhouetten">
-      <h3>Silhouetten und Reduktion</h3>
-      <p class="cat-desc">Kunstvolle Auseinandersetzung mit echter Fotografie - Interpretationen aus der Natur. </p>
+        <!-- ---- Kategorie: Pflanzenwelt ---- -->
+    <!--<div class="cat-block" id="pflanzenwelt">
+      <h3>Pflanzenwelt</h3>
+      <p class="cat-desc">Blüten, Bläätter und Bäume. Die farbenfrohe Natur um uns herum.</p>
       <div class="grid">
-       <div class="card hero"><img src="bilder/teichleben-01.jpg" alt="Entenküken schaut frontal in die Kamera"><span class="tag"><b>Entenküken</b> · Nahaufnahme</span></div>
-       <div class="card side"><img src="bilder/teichleben-02.jpg" alt="Gänseküken schläft auf der Wiese"><span class="tag"><b>Gänseküken</b> · bei Gänseblümchen</span></div>
-       <div class="card side"><img src="bilder/teichleben-03.jpg" alt="Ente breitet die Flügel auf dem Wasser aus"><span class="tag"><b>Stockente</b> · Flügelzauber</span></div>
+       <div class="card hero"><img src="bilder/pflanzenwelt-01.jpg" alt=""><span class="tag"><b>Eichhörnchen</b> · planend</span></div>
+       <div class="card side"><img src="bilder/pflanzenwelt-02.jpg" alt=""><span class="tag"><b>Buntspecht</b> · aus Baumhöhle</span></div>
+       <div class="card side"><img src="bilder/pflanzenwelt-03.jpg" alt=""><span class="tag"><b>Eichhörnchen</b> · in sich ruhend</span></div>
       </div>
       <div class="cat-more">
-        <a class="btn btn-outline" href="galerie-silhouetten.html">Mehr entdecken</a>
+        <a class="btn btn-outline" href="galerie-pflanzenwelt.html">Mehr entdecken</a>
       </div>
-    </div>
+    </div>-->
+
+    <!-- ---- Kategorie: Silhouetten und Reduktion ---- -->
+    <div class="cat-block" id="reduktion">
+      <h3>Reduktion - Natur neu betrachtet</h3>
+      <p class="cat-desc">Echte Naturfotografie, reduziert, neu interpretiert und bewusst anders gesehen. </p>
+      <div class="grid">
+       <div class="card hero"><img src="bilder/reduktion-01.jpg" alt="Silhouette zweier Stare auf einem Ast. Schwarz vor grauem Hintergrund"><span class="tag"><b>Star-Silhouette</b> · Reduktion und Detail</span></div>
+       <div class="card side"><img src="bilder/reduktion-02.jpg" alt="farbenfrohe Singdrossel auf ausgegrauten Ästen"><span class="tag"><b>Singdrossel</b> · der letzte Apfel</span></div>
+       <div class="card side"><img src="bilder/reduktion-03.jpg" alt="Blässhuhn auf dunklem Wasser mit Spiegelung"><span class="tag"><b>Blässhuhn</b> · dunkle Spiegelung</span></div>
+      </div>
+      <!--<div class="cat-more">
+        <a class="btn btn-outline" href="galerie-reduktion.html">Mehr entdecken</a>
+      </div>
+    </div>-->
 
   </div>
 </section>
@@ -133,8 +154,9 @@
 <section id="erhaeltlich-als" style="background:var(--bg-panel);">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Interesse an einem Motiv?</h2>
-      <p>Viele meiner Fotografien können auf Anfrage in verschiedenen Formaten angefertigt werden.</p>
+      <span class="eyebrow">Vielseitig erhältlich</span>
+      <h2>Motive in Formen für alle</h2>
+      <p>Viele meiner Fotografien können auf Anfrage in verschiedensten Formaten und Ausführungen angefertigt werden:</p>
     </div>
     <ul class="avail-list">
       <li>Fine-Art-Prints</li>
@@ -143,6 +165,7 @@
       <li>Sticker</li>
       <li>Lesezeichen</li>
       <li>Bildlizenzen für Medien und Verlage</li>
+      <li>...und individuell mehr!</li>
     </ul>
     <p class="avail-note">Da viele Produkte individuell angefertigt werden, freue ich mich über eine persönliche Anfrage.</p>
     <a class="btn btn-fill" href="#kontakt">Kontakt aufnehmen</a>
@@ -150,27 +173,42 @@
 </section>
 
 <!-- ============ ÜBER MICH ============ -->
-<section id="ueber-mich" style="background:var(--bg-panel);">
-  <div class="wrap">
-    <div class="about-grid">
-      <div class="about-photo">
-        <!-- ERSETZEN: dein Porträtfoto, z.B. <img src="bilder/portraet.jpg" alt="Porträt des Fotografen mit Kamera im Wald"> -->
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c1-3.6 4-5.6 7-5.6s6 2 7 5.6"/></svg>
+<section class="about">
+  <div class="about-intro">
+    <span class="eyebrow">Über mich</span>
+    <h2>Die Natur im Jetzt und Hier genießen.</h2>
+    <p>Ich fotografiere die Tiere und Pflanzen unserer Heimat ehrlich, ruhig und mit
+      einem Blick für die besonderen Momente des Alltäglichen. Die Natur ist
+      allgegenwärtig um uns herum. Statt weiten Reisen reicht es, sich nur ein paar
+      Schritte vor die Haustür zu begeben. Neben authentischer Naturfotografie
+      entstehen aus ausgewählten Bildern zudem künstlerische Arbeiten, die meine
+      persönliche und kreative Sicht auf die Natur zeigen.</p>
+  </div>
+
+  <div class="about-pyramid">
+    <img src="bilder/profile.jpg" alt="Benedict Gertz" class="profile-img">
+    <h3 class="profile-name">Benedict Gertz</h3>
+
+    <div class="info-row">
+      <div class="info-card">
+        <span class="info-label">Schwerpunkte</span>
+        <div class="tags">
+          <span class="tag">Vögel</span>
+          <span class="tag">heimische Tierwelt</span>
+          <span class="tag">Natur</span>
+        </div>
       </div>
-      <div>
-        <span class="eyebrow">Über mich</span>
-        <h2>Die Natur im Jetzt und Hier genießen.</h2>
-        <p style="color:var(--text-muted); max-width:52ch;">
-          Ich fotografiere die Tiere und Pflanzen unserer Heimat ehrlich, ruhig und mit einem Blick für die besonderen Momente des Alltäglichen. Die Natur ist allgegenwärtig um uns herum. Statt weiten Reisen reicht es, sich nur ein paar Schritte vor die Haustür zu begeben.
-          Neben authentischer Naturfotografie entstehen aus ausgewählten Bildern zudem auch künstlerische Arbeiten, die meine persönliche und kreative Sicht auf die Natur zeigen.
-        </p>
-        <ul class="gear-list">
-         <li><span>Fotograf</span><span>Benedict Gertz</span></li>
-          <li><span>Schwerpunkte</span><span>Vögel, heimische Tierwelt, Natur</span></li>
-          <li><span>Standort</span><span>Schleswig-Holstein, Hamburg, Norddeutschland</span></li>
-          <li><span>Tierschutz-Hinweis</span><span>Ich wahre den nötigen Abstand, um die Tiere nicht zu stressen. Ich präperiere keine Stellen und locke auch keine Tiere an. Meine Fotografien entstehen spontan im Moment, ohne etwas zu erzwingen.</span></li>
-        </ul>
+      <div class="info-card">
+        <span class="info-label">Standort</span>
+        <p class="info-value">Schleswig-Holstein, Hamburg, Norddeutschland</p>
       </div>
+    </div>
+
+    <div class="info-card info-card--wide">
+      <span class="info-label">Tierschutz-Hinweis</span>
+      <p class="info-value">Ich wahre den nötigen Abstand, um die Tiere nicht zu
+        stressen. Ich präpariere keine Stellen und locke auch keine Tiere an.
+        Meine Fotografien entstehen spontan im Moment, ohne etwas zu erzwingen.</p>
     </div>
   </div>
 </section>
@@ -180,13 +218,13 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Vor Ort</span>
-      <h2>Wo du mich triffst</h2>
+      <h2>Termine im Norden</h2>
       <p>Meine Drucke und Postkarten gibt es auch zum Anschauen und direkt Mitnehmen auf regionalen Märkten und Veranstaltungen.</p>
     </div>
     <ul class="gear-list" style="max-width:560px;">
       <!-- ERSETZEN: trage hier deine tatsächlichen Termine ein, älteste/zukünftigste oben. Block kopieren für weitere Termine. -->
-      <li><span> Termine folgen · Standorte: Kreis Pinneberg</span><span></span></li>
-      <li><span> Produkte und Termien können auch direkt angefragt werden.</span><span></span></li>
+      <li><span> Termine folgen · Standorte: Kreis Pinneberg/Hamburg</span><span></span></li>
+      <li><span> Produkte und Termine können auch direkt angefragt werden.</span><span></span></li>
 
     </ul>
     <p style="color:var(--text-muted); font-size:.9rem; margin-top:1.4rem;">Aktuelle Termine folgen auf Instagram.</p>
@@ -199,8 +237,8 @@
     <div class="contact-grid">
       <div>
         <span class="eyebrow">Kontakt</span>
-        <h2>Schreib mir.</h2>
-        <p style="color:var(--text-muted); max-width:40ch;">Ob Print, Postkarte, Sticker oder einfach um Hallo zu sagen.
+        <h2>Anfragen, Anregungen und Austausch</h2>
+        <p style="color:var(--text-muted); max-width:40ch;">Ob Print, Postkarte, Sticker oder ein einfaches Hallo.
         Ich freue mich auf deine Nachricht.</p>
         <div class="socials">
           <a href="#https://www.instagram.com/skarvaan.fotografie/ target="_blank" rel="noopener">Instagram</a>
@@ -208,12 +246,6 @@
         </div>
       </div>
       <div>
-        <!--
-          WICHTIG: Diese Seite ist eine statische HTML-Datei ohne eigenen Server.
-          Damit das Formular wirklich E-Mails versendet, brauchst du einen kostenlosen
-          Formular-Dienst wie Formspree (https://formspree.io). Schritte in ANLEITUNG.md.
-          Trage unten deine eigene Formspree-Action-URL ein.
-        -->
         <form action="https://formspree.io/f/mzdldepl" method="POST">
           <div>
             <label for="name">Name</label>
