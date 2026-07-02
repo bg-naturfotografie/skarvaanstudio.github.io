@@ -44,7 +44,7 @@
     display:block;
     margin-bottom:.6em;
   }
-  section{padding:5.5rem 0;}
+  section{padding:5.5rem 0; scroll-margin-top:64px;}
   .btn{
     display:inline-block;
     padding:.85em 1.7em;
